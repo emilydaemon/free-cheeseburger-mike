@@ -1,0 +1,3 @@
+# Private configuration files
+config/*
+!config/config.def.json
