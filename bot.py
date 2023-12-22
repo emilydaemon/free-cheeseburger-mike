@@ -36,12 +36,14 @@ except FileNotFoundError:
     print("Error: Config not found. Did you forget to copy config.def.json to config.json?")
     sys.exit()
 
+
 @client.event
 async def on_ready():
     await client.tree.sync()
     print("Logged in as "+str(client.user))
 
-@client.tree.command(name = "gimme", description = "free cheeseburger mike")
+
+@client.tree.command(name="gimme", description="free cheeseburger mike")
 async def give_command(interaction, private: bool = True):
     await interaction.response.defer(ephemeral=private)
 
@@ -63,8 +65,8 @@ async def give_command(interaction, private: bool = True):
         await interaction.followup.send(f"Error! Got HTTP status code `{statusf}`. Try again later.")
         return
 
-    giftcode=r.json()["token"]
-    output=config["gifturl"]+giftcode
+    giftcode = r.json()["token"]
+    output = config["gifturl"]+giftcode
     await interaction.followup.send(f"[Here you go mate, cheers \N{thumbs up sign}]({output})")
 
 client.run(config["token"])
