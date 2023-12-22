@@ -1,5 +1,8 @@
 # free cheeseburger mike
 
+![GitHub Workflow Status (with event)](https://img.shields.io/github/actions/workflow/status/emilydaemon/free-cheeseburger-mike/python-app.yml)
+![GitHub License](https://img.shields.io/github/license/emilydaemon/free-cheeseburger-mike)
+
 **free cheeseburger mike** is a bot that generates Discord Nitro codes
 using Opera GX's promotion.
 
