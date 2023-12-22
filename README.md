@@ -11,7 +11,7 @@ The name comes from
 written by Matt Rose, which is a probably illegal guide on how to score yourself
 some free McDonalds, with clogged arteries included.
 
-Licensed under GPL version 3.
+Licensed under AGPL version 3.
 
 ## How to use
 
